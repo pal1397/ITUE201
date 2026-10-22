@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StudentHub - Academics Hub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f1f5f9;
+            color: #1f2937;
+        }
+
+        .navbar {
+            background: #173b7a;
+            padding: 18px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .page-title {
+            font-size: 22px;
+        }
+
+        .logout {
+            color: white;
+            text-decoration: none;
+            background: #e74c3c;
+            padding: 9px 16px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .logout:hover {
+            background: #c0392b;
+        }
+
+        .layout {
+            width: 92%;
+            max-width: 1200px;
+            margin: 35px auto;
+            display: flex;
+            gap: 25px;
+        }
+
+        .sidebar {
+            width: 230px;
+            background: white;
+            padding: 22px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            height: fit-content;
+        }
+
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            color: #334155;
+            padding: 13px;
+            margin-bottom: 8px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover {
+            background: #e8f0ff;
+            color: #173b7a;
+        }
+
+        .sidebar .active {
+            background: #173b7a;
+            color: white;
+        }
+
+        .student-image {
+            margin-top: 20px;
+            padding: 25px 10px;
+            text-align: center;
+            background: #eef4ff;
+            border-radius: 10px;
+            color: #64748b;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .welcome {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+
+        .welcome h2 {
+            color: #173b7a;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 35px 15px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 25px rgba(23,59,122,0.16);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #173b7a;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .icon {
+            display: block;
+            font-size: 35px;
+            margin-bottom: 12px;
+        }
+
+        .footer {
+            background: #173b7a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 850px) {
+            .layout {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 550px) {
+            .navbar {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">🎓 StudentHub</div>
+
+        <div class="page-title">ACADEMICS HUB</div>
+
+        <a href="index.html" class="logout">LOGOUT</a>
+
+    </header>
+
+    <main class="layout">
+
+        <aside class="sidebar">
+
+            <a href="dashboard.html">DASHBOARD</a>
+            <a href="profile.html">MY PROFILE</a>
+            <a href="academics.html" class="active">ACADEMIC</a>
+            <a href="participation.html">EVENTS &amp; CLUBS</a>
+            <a href="fees.html">FEES</a>
+
+            <div class="student-image">
+                👤<br><br>
+                STUDENT IMAGE
+            </div>
+
+        </aside>
+
+        <section class="content">
+
+            <div class="welcome">
+                <h2>WELCOME TO ACADEMICS</h2>
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+                    <a href="courses.html">
+                        <span class="icon">📚</span>
+                        COURSES
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="subjects.html">
+                        <span class="icon">📖</span>
+                        SUBJECTS
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="timetable.html">
+                        <span class="icon">🗓️</span>
+                        TIMETABLE
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="attendance.html">
+                        <span class="icon">📊</span>
+                        ATTENDANCE
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="result.html">
+                        <span class="icon">🏆</span>
+                        RESULT
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="studymaterial.html">
+                        <span class="icon">📑</span>
+                        STUDY MATERIAL
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        STUDENTHUB PORTAL
+    </footer>
+
+</body>
+</html>

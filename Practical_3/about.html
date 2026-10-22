@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StudentHub - About</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #eef4ff, #f8fbff);
+            color: #1f2937;
+        }
+
+        .navbar {
+            background: #173b7a;
+            padding: 18px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #8ec5ff;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 50px auto;
+        }
+
+        .hero {
+            background: white;
+            text-align: center;
+            padding: 45px 20px;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(23,59,122,0.12);
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            color: #173b7a;
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            color: #64748b;
+            font-size: 17px;
+        }
+
+        .info-card {
+            background: white;
+            padding: 28px;
+            margin-bottom: 22px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            border-left: 5px solid #173b7a;
+        }
+
+        .info-card h2 {
+            color: #173b7a;
+            margin-bottom: 15px;
+        }
+
+        .info-card p {
+            line-height: 1.7;
+            color: #475569;
+        }
+
+        .offer-list {
+            list-style: none;
+        }
+
+        .offer-list li {
+            padding: 10px 0;
+            color: #475569;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .offer-list li:last-child {
+            border-bottom: none;
+        }
+
+        .footer {
+            background: #173b7a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 700px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links a {
+                margin: 0 7px;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">🎓 StudentHub</div>
+
+        <nav class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="login.html">LOGIN</a>
+            <a href="register.html">REGISTER</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <h1>ABOUT STUDENTHUB</h1>
+            <p><i>"Know more about our platform"</i></p>
+        </section>
+
+        <section class="info-card">
+            <h2>WHO WE ARE</h2>
+            <p>
+                StudentHub is a college portal that helps students manage
+                their academics, attendance, fees, events, clubs and profile
+                — all at one place.
+            </p>
+        </section>
+
+        <section class="info-card">
+            <h2>OUR MISSION</h2>
+            <p>
+                To make student life simpler by bringing all academic and
+                administrative services together on a single, easy-to-use
+                platform.
+            </p>
+        </section>
+
+        <section class="info-card">
+            <h2>WHAT WE OFFER</h2>
+
+            <ul class="offer-list">
+                <li>🎓 Student Dashboard &amp; Profile</li>
+                <li>📚 Academics Hub (Courses, Subjects, Timetable, Attendance, Result, Study Material)</li>
+                <li>🎉 Events &amp; Clubs Participation</li>
+                <li>💳 Fees Management &amp; Online Payment</li>
+                <li>⚙️ Admin Control Panel for Institute Management</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        STUDENTHUB PORTAL
+    </footer>
+
+</body>
+</html>
