@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "title": "Orientation Day",
+    "category": "Academic",
+    "date": "2026-11-02",
+    "description": "Welcome for new students"
+  },
+  {
+    "id": 2,
+    "title": "Coding Contest",
+    "category": "Technical",
+    "date": "2026-11-03",
+    "description": "Programming challenge"
+  },
+  {
+    "id": 3,
+    "title": "Tech Fest",
+    "category": "Technical",
+    "date": "2026-11-04",
+    "description": "Student technology exhibition"
+  },
+  {
+    "id": 4,
+    "title": "Sports Meet",
+    "category": "Sports",
+    "date": "2026-11-05",
+    "description": "Interdepartmental games"
+  },
+  {
+    "id": 5,
+    "title": "Art Workshop",
+    "category": "Cultural",
+    "date": "2026-11-06",
+    "description": "Creative skills session"
+  },
+  {
+    "id": 6,
+    "title": "Career Talk",
+    "category": "Academic",
+    "date": "2026-11-07",
+    "description": "Industry career discussion"
+  },
+  {
+    "id": 7,
+    "title": "Hackathon",
+    "category": "Technical",
+    "date": "2026-11-08",
+    "description": "Build a prototype"
+  },
+  {
+    "id": 8,
+    "title": "Music Evening",
+    "category": "Cultural",
+    "date": "2026-11-09",
+    "description": "Student performances"
+  },
+  {
+    "id": 9,
+    "title": "Robotics Demo",
+    "category": "Technical",
+    "date": "2026-11-10",
+    "description": "Robotics showcase"
+  },
+  {
+    "id": 10,
+    "title": "Debate Contest",
+    "category": "Cultural",
+    "date": "2026-11-11",
+    "description": "Public speaking event"
+  },
+  {
+    "id": 11,
+    "title": "Yoga Session",
+    "category": "Wellness",
+    "date": "2026-11-12",
+    "description": "Guided yoga"
+  },
+  {
+    "id": 12,
+    "title": "Science Fair",
+    "category": "Academic",
+    "date": "2026-11-13",
+    "description": "Student projects"
+  },
+  {
+    "id": 13,
+    "title": "Photography Walk",
+    "category": "Cultural",
+    "date": "2026-11-14",
+    "description": "Campus photography"
+  },
+  {
+    "id": 14,
+    "title": "Football Match",
+    "category": "Sports",
+    "date": "2026-11-15",
+    "description": "Friendly match"
+  },
+  {
+    "id": 15,
+    "title": "Alumni Meet",
+    "category": "Academic",
+    "date": "2026-11-16",
+    "description": "Meet graduates"
+  }
+]

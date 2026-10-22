@@ -1,0 +1,1 @@
+<?php session_start();if(!isset($_SESSION['user_id'])||($_SESSION['role']??'')!=='admin'){http_response_code(403);exit('Forbidden: admin access required.');}?><h1>Admin dashboard</h1><p>Access granted to admin.</p>

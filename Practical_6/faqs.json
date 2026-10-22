@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "question": "How do I register?",
+    "answer": "Complete the registration form.",
+    "category": "Account"
+  },
+  {
+    "id": 2,
+    "question": "How do I log in?",
+    "answer": "Use your registered email and password.",
+    "category": "Account"
+  },
+  {
+    "id": 3,
+    "question": "How can I reset a password?",
+    "answer": "Contact the portal administrator.",
+    "category": "Account"
+  },
+  {
+    "id": 4,
+    "question": "Where are events listed?",
+    "answer": "Use the Events section.",
+    "category": "Events"
+  },
+  {
+    "id": 5,
+    "question": "How do I join a club?",
+    "answer": "Contact the club coordinator.",
+    "category": "Clubs"
+  },
+  {
+    "id": 6,
+    "question": "Where can I see attendance?",
+    "answer": "Open your student dashboard.",
+    "category": "Academics"
+  },
+  {
+    "id": 7,
+    "question": "Where are results shown?",
+    "answer": "Open the Results section.",
+    "category": "Academics"
+  },
+  {
+    "id": 8,
+    "question": "How do I update my profile?",
+    "answer": "Open Profile and edit details.",
+    "category": "Account"
+  },
+  {
+    "id": 9,
+    "question": "Who handles fees?",
+    "answer": "Contact the accounts office.",
+    "category": "Fees"
+  },
+  {
+    "id": 10,
+    "question": "How do I contact support?",
+    "answer": "Use the Contact page.",
+    "category": "Support"
+  },
+  {
+    "id": 11,
+    "question": "Can I use a phone?",
+    "answer": "Yes, the pages are responsive.",
+    "category": "Technical"
+  },
+  {
+    "id": 12,
+    "question": "How do I view materials?",
+    "answer": "Open the Materials section.",
+    "category": "Academics"
+  },
+  {
+    "id": 13,
+    "question": "Where are notices?",
+    "answer": "Check the Notices section.",
+    "category": "Campus"
+  },
+  {
+    "id": 14,
+    "question": "How do I report an issue?",
+    "answer": "Send details through Feedback.",
+    "category": "Support"
+  },
+  {
+    "id": 15,
+    "question": "How do I sign out?",
+    "answer": "Select Logout in the menu.",
+    "category": "Account"
+  }
+]
