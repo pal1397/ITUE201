@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StudentHub - Student Fees Portal</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f1f5f9;
+            color: #1f2937;
+        }
+
+        .navbar {
+            background: #173b7a;
+            padding: 18px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1200px;
+            margin: 35px auto;
+        }
+
+        .layout {
+            display: flex;
+            gap: 25px;
+        }
+
+        .sidebar {
+            width: 230px;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            height: fit-content;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 13px;
+            margin-bottom: 8px;
+            text-decoration: none;
+            color: #334155;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover {
+            background: #e8f0ff;
+            color: #173b7a;
+        }
+
+        .sidebar .active {
+            background: #173b7a;
+            color: white;
+        }
+
+        .student-image {
+            background: #eef4ff;
+            padding: 30px 10px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 10px;
+            color: #64748b;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            margin-bottom: 25px;
+        }
+
+        .card h2 {
+            color: #173b7a;
+            margin-bottom: 15px;
+        }
+
+        .profile p {
+            margin: 10px 0;
+            color: #475569;
+            line-height: 1.5;
+        }
+
+        .profile strong {
+            color: #173b7a;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #173b7a;
+            color: white;
+            padding: 14px;
+        }
+
+        td {
+            padding: 14px;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        tr:hover td {
+            background: #f8fafc;
+        }
+
+        .paid {
+            color: #15803d;
+            font-weight: bold;
+        }
+
+        .payment-form {
+            display: grid;
+            gap: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+            color: #334155;
+        }
+
+        .form-group select,
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        .pay-btn {
+            padding: 13px;
+            background: #173b7a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .pay-btn:hover {
+            background: #0f2a58;
+        }
+
+        .footer {
+            background: #173b7a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 850px) {
+            .navbar {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+
+            .layout {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            th,
+            td {
+                padding: 9px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">🎓 StudentHub</div>
+
+        <div class="title">STUDENT FEES PORTAL</div>
+
+    </header>
+
+    <main class="container">
+
+        <div class="layout">
+
+            <aside class="sidebar">
+
+                <a href="dashboard.html">DASHBOARD</a>
+                <a href="profile.html">PROFILE</a>
+                <a href="academics.html">ACADEMICS</a>
+                <a href="participation.html">EVENTS &amp; CLUBS</a>
+                <a href="fees.html" class="active">FEES</a>
+
+                <div class="student-image">
+                    👤<br><br>
+                    STUDENT IMAGE
+                </div>
+
+            </aside>
+
+            <section class="content">
+
+                <div class="card profile">
+
+                    <h2>👤 ADMISSION PROFILE</h2>
+
+                    <p>
+                        <strong>Name:</strong>
+                        PATEL PALBEN PANKAJKUMAR
+                    </p>
+
+                    <p>
+                        <strong>Branch:</strong>
+                        Computer Engineering
+                    </p>
+
+                    <p>
+                        <strong>Institute:</strong>
+                        CHANDUBHAI S. PATEL INSTITUTE OF TECHNOLOGY
+                    </p>
+
+                    <p>
+                        <strong>Quota:</strong>
+                        MGMT QUOTA
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>💰 FEES DETAILS</h2>
+
+                    <div class="table-container">
+
+                        <table>
+
+                            <tr>
+                                <th>Semester</th>
+                                <th>Total Fees</th>
+                                <th>Received Fees</th>
+                                <th>Scholarship</th>
+                                <th>Pending Fees</th>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>77,500.00</td>
+                                <td>77,500.00</td>
+                                <td>0.00</td>
+                                <td class="paid">0.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>3,500.00</td>
+                                <td>3,500.00</td>
+                                <td>0.00</td>
+                                <td class="paid">0.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>1,55,500.00</td>
+                                <td>96,300.00</td>
+                                <td>59,200.00</td>
+                                <td class="paid">0.00</td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>💳 ONLINE PAYMENT</h2>
+
+                    <form action="#" method="post" class="payment-form">
+
+                        <div class="form-group">
+                            <label>Select Semester:</label>
+
+                            <select name="semester">
+                                <option>Semester 1</option>
+                                <option>Semester 2</option>
+                                <option>Semester 3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Pending Amount:</label>
+
+                            <input type="text" value="0.00" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Payment Mode:</label>
+
+                            <select name="paymentmode">
+                                <option>Credit / Debit Card</option>
+                                <option>Net Banking</option>
+                                <option>UPI</option>
+                            </select>
+                        </div>
+
+                        <input type="submit" value="PAY NOW" class="pay-btn">
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        STUDENTHUB PORTAL
+    </footer>
+
+<style id="practical4-interactive-styles">
+.p4-tools{position:fixed;right:16px;bottom:16px;z-index:9999;display:flex;flex-wrap:wrap;gap:8px;max-width:min(94vw,460px);justify-content:flex-end;font-family:Arial,sans-serif}
+.p4-tools button,.p4-modal button{border:0;border-radius:8px;padding:10px 13px;background:#2449a4;color:#fff;font-weight:600;cursor:pointer;box-shadow:0 3px 10px #0002}
+.p4-tools button:focus-visible,.p4-modal button:focus-visible{outline:3px solid #f2b84b;outline-offset:2px}
+.p4-panel{position:fixed;right:16px;bottom:76px;z-index:9998;width:min(340px,calc(100vw - 32px));max-height:65vh;overflow:auto;background:#fff;color:#202b3c;border:1px solid #d8deea;border-radius:12px;padding:16px;box-shadow:0 12px 35px #0003;display:none}
+.p4-panel.open{display:block}.p4-panel h3{margin:0 0 10px}.p4-faq-q{display:block;width:100%;text-align:left;margin:7px 0;background:#eef3ff!important;color:#18366f!important;box-shadow:none!important}.p4-faq-a{display:none;padding:8px 10px;background:#f8faff;border-radius:6px}.p4-faq-a.open{display:block}
+.p4-modal{display:none;position:fixed;inset:0;z-index:10000;background:#0008;align-items:center;justify-content:center;padding:20px}.p4-modal.open{display:flex}.p4-modal-card{background:#fff;color:#202b3c;padding:24px;border-radius:14px;max-width:420px;width:100%;box-shadow:0 15px 45px #0004}.p4-notice{position:fixed;top:18px;right:18px;z-index:10001;max-width:320px;padding:14px 18px;border-radius:10px;background:#16764b;color:#fff;box-shadow:0 8px 24px #0002;display:none}.p4-notice.show{display:block}.p4-slide{padding:14px;border-radius:9px;background:#eef3ff;margin:8px 0}.p4-dark{background:#111827!important;color:#e5e7eb!important}.p4-dark main,.p4-dark section,.p4-dark article,.p4-dark .container,.p4-dark .layout,.p4-dark .card,.p4-dark .content,.p4-dark .form-container{color:#e5e7eb}.p4-dark .p4-panel,.p4-dark .p4-modal-card{background:#1f2937;color:#f9fafb}.p4-dark .p4-faq-q,.p4-dark .p4-faq-a,.p4-dark .p4-slide{background:#374151!important;color:#f9fafb!important}
+.p4-menu-open .nav-links,.p4-menu-open nav{display:flex!important;flex-direction:column;gap:10px}.p4-menu-open header{height:auto!important;flex-wrap:wrap}.p4-menu-open .nav-links a,.p4-menu-open nav a{padding:7px}
+@media(max-width:650px){.p4-tools{right:8px;bottom:8px;max-width:calc(100vw - 16px)}.p4-tools button{padding:9px 10px;font-size:12px}.p4-panel{right:8px;bottom:66px}}
+</style>
+<div class="p4-tools" aria-label="Interactive website controls">
+ <button type="button" id="p4-menu" aria-expanded="false">☰ Menu</button>
+ <button type="button" id="p4-theme" aria-pressed="false">🌙 Dark mode</button>
+ <button type="button" id="p4-faq-toggle" aria-expanded="false">❔ FAQ</button>
+ <button type="button" id="p4-slider-toggle">🖼 Slider</button>
+ <button type="button" id="p4-modal-open">ℹ️ Quick info</button>
+ <button type="button" id="p4-notify">🔔 Notify me</button>
+</div>
+<div class="p4-panel" id="p4-panel" aria-label="Interactive FAQ and content slider">
+ <section id="p4-faq" hidden>
+  <h3>Frequently Asked Questions</h3>
+  <button class="p4-faq-q" type="button" aria-expanded="false">What is StudentHub?</button><div class="p4-faq-a">StudentHub is a student portal for academic information, events and student services.</div>
+  <button class="p4-faq-q" type="button" aria-expanded="false">How do I navigate this portal?</button><div class="p4-faq-a">Use the page navigation links or the Menu control to open the navigation.</div>
+  <button class="p4-faq-q" type="button" aria-expanded="false">Can I change the appearance?</button><div class="p4-faq-a">Yes. Use the theme control. Your preference is saved in this browser with localStorage.</div>
+ </section>
+ <section id="p4-slider" hidden>
+  <h3>StudentHub Highlights</h3><div class="p4-slide" id="p4-slide-text" aria-live="polite">Welcome to StudentHub — one place for student services.</div>
+  <button type="button" id="p4-prev">← Previous</button> <button type="button" id="p4-next">Next →</button>
+ </section>
+</div>
+<div class="p4-modal" id="p4-modal" role="dialog" aria-modal="true" aria-labelledby="p4-modal-title">
+ <div class="p4-modal-card"><h2 id="p4-modal-title">Welcome to StudentHub</h2><p>This quick information popup demonstrates JavaScript events and modal UI interaction.</p><button type="button" id="p4-modal-close">Close</button></div>
+</div>
+<div class="p4-notice" id="p4-notice" role="status" aria-live="polite">You are all caught up!</div>
+<script>
+(() => {
+ const body = document.body;
+ const themeButton = document.getElementById('p4-theme');
+ const menuButton = document.getElementById('p4-menu');
+ const panel = document.getElementById('p4-panel');
+ const faq = document.getElementById('p4-faq');
+ const slider = document.getElementById('p4-slider');
+ const modal = document.getElementById('p4-modal');
+ const notice = document.getElementById('p4-notice');
+ const slides = [
+  'Welcome to StudentHub — one place for student services.',
+  'Stay connected with academic updates and campus events.',
+  'Use the portal navigation to explore student resources.'
+ ];
+ let slideIndex = 0;
+ const savedTheme = localStorage.getItem('studenthub-theme');
+ if (savedTheme === 'dark') body.classList.add('p4-dark');
+ const updateThemeButton = () => {
+  const dark = body.classList.contains('p4-dark');
+  themeButton.textContent = dark ? '☀️ Light mode' : '🌙 Dark mode';
+  themeButton.setAttribute('aria-pressed', String(dark));
+ };
+ updateThemeButton();
+ themeButton.addEventListener('click', () => {
+  body.classList.toggle('p4-dark');
+  localStorage.setItem('studenthub-theme', body.classList.contains('p4-dark') ? 'dark' : 'light');
+  updateThemeButton();
+ });
+ menuButton.addEventListener('click', () => {
+  const opened = body.classList.toggle('p4-menu-open');
+  menuButton.setAttribute('aria-expanded', String(opened));
+  menuButton.textContent = opened ? '✕ Close menu' : '☰ Menu';
+  const nav = document.querySelector('header nav, .nav-links');
+  if (nav && opened) nav.scrollIntoView({behavior:'smooth', block:'nearest'});
+ });
+ const openPanel = (which) => {
+  panel.classList.add('open');
+  faq.hidden = which !== 'faq';
+  slider.hidden = which !== 'slider';
+ };
+ document.getElementById('p4-faq-toggle').addEventListener('click', () => {
+  const opening = faq.hidden || !panel.classList.contains('open');
+  if (opening) openPanel('faq'); else panel.classList.remove('open');
+  document.getElementById('p4-faq-toggle').setAttribute('aria-expanded', String(opening));
+ });
+ document.querySelectorAll('.p4-faq-q').forEach((button) => {
+  button.addEventListener('click', () => {
+   const answer = button.nextElementSibling;
+   const opened = answer.classList.toggle('open');
+   button.setAttribute('aria-expanded', String(opened));
+  });
+ });
+ document.getElementById('p4-slider-toggle').addEventListener('click', () => {
+  const opening = slider.hidden || !panel.classList.contains('open');
+  if (opening) openPanel('slider'); else panel.classList.remove('open');
+ });
+ const showSlide = () => { document.getElementById('p4-slide-text').textContent = slides[slideIndex]; };
+ document.getElementById('p4-prev').addEventListener('click', () => { slideIndex = (slideIndex + slides.length - 1) % slides.length; showSlide(); });
+ document.getElementById('p4-next').addEventListener('click', () => { slideIndex = (slideIndex + 1) % slides.length; showSlide(); });
+ document.getElementById('p4-modal-open').addEventListener('click', () => modal.classList.add('open'));
+ document.getElementById('p4-modal-close').addEventListener('click', () => modal.classList.remove('open'));
+ modal.addEventListener('click', (event) => { if (event.target === modal) modal.classList.remove('open'); });
+ document.addEventListener('keydown', (event) => { if (event.key === 'Escape') { modal.classList.remove('open'); panel.classList.remove('open'); } });
+ document.getElementById('p4-notify').addEventListener('click', () => {
+  notice.classList.add('show');
+  window.setTimeout(() => notice.classList.remove('show'), 2800);
+ });
+})();
+</script>
+
+</body>
+</html>
