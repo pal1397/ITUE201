@@ -1,4 +1,0 @@
-Entities: STUDENTS (id PK, name, email unique, course, year)
-EVENTS (id PK, title, event_date, category, description)
-REGISTRATIONS (id PK, student_id FK -> STUDENTS.id, event_id FK -> EVENTS.id, registered_at)
-Relationships: STUDENTS 1-to-many REGISTRATIONS; EVENTS 1-to-many REGISTRATIONS. A student can register for many events and an event can have many students.

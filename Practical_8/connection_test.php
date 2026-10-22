@@ -1,1 +1,0 @@
-<?php require 'db.php';$stmt=$pdo->query('SELECT COUNT(*) AS total FROM students');$row=$stmt->fetch();?><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Database Test</title></head><body><h1>StudentHub database connection successful</h1><p>Student records: <?=htmlspecialchars((string)$row['total'])?></p></body></html>
