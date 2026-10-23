@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development Workshop",
+    "category": "Workshop",
+    "date": "2026-11-05",
+    "venue": "Lab 1"
+  },
+  {
+    "id": 2,
+    "title": "Annual Sports Meet",
+    "category": "Sports",
+    "date": "2026-11-12",
+    "venue": "Sports Ground"
+  },
+  {
+    "id": 3,
+    "title": "AI Innovation Seminar",
+    "category": "Seminar",
+    "date": "2026-11-18",
+    "venue": "Auditorium"
+  },
+  {
+    "id": 4,
+    "title": "Coding Competition",
+    "category": "Competition",
+    "date": "2026-11-22",
+    "venue": "Lab 2"
+  },
+  {
+    "id": 5,
+    "title": "Cultural Festival",
+    "category": "Cultural",
+    "date": "2026-12-02",
+    "venue": "Main Campus"
+  },
+  {
+    "id": 6,
+    "title": "Cyber Security Talk",
+    "category": "Seminar",
+    "date": "2026-12-07",
+    "venue": "Auditorium"
+  },
+  {
+    "id": 7,
+    "title": "UI/UX Design Workshop",
+    "category": "Workshop",
+    "date": "2026-12-10",
+    "venue": "Design Lab"
+  },
+  {
+    "id": 8,
+    "title": "Cricket Tournament",
+    "category": "Sports",
+    "date": "2026-12-14",
+    "venue": "Sports Ground"
+  },
+  {
+    "id": 9,
+    "title": "Project Expo",
+    "category": "Exhibition",
+    "date": "2026-12-18",
+    "venue": "Main Hall"
+  },
+  {
+    "id": 10,
+    "title": "Photography Contest",
+    "category": "Competition",
+    "date": "2026-12-20",
+    "venue": "Block A"
+  },
+  {
+    "id": 11,
+    "title": "Robotics Demo",
+    "category": "Exhibition",
+    "date": "2027-01-08",
+    "venue": "Innovation Lab"
+  },
+  {
+    "id": 12,
+    "title": "Resume Building Session",
+    "category": "Workshop",
+    "date": "2027-01-12",
+    "venue": "Seminar Hall"
+  },
+  {
+    "id": 13,
+    "title": "Music Evening",
+    "category": "Cultural",
+    "date": "2027-01-18",
+    "venue": "Open Air Theatre"
+  },
+  {
+    "id": 14,
+    "title": "Cloud Computing Seminar",
+    "category": "Seminar",
+    "date": "2027-01-22",
+    "venue": "Auditorium"
+  },
+  {
+    "id": 15,
+    "title": "Hackathon",
+    "category": "Competition",
+    "date": "2027-01-28",
+    "venue": "Innovation Lab"
+  }
+]

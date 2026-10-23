@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Practical 6 - Fetch JSON</title><style>
+body{font-family:Arial,sans-serif;background:#f1f5f9;margin:0;color:#1f2937}header{background:#173b7a;color:white;padding:18px 5%}
+main{max-width:1000px;margin:30px auto;padding:0 16px}.controls{display:flex;gap:10px;flex-wrap:wrap;background:white;padding:18px;border-radius:10px}
+input,select,button{padding:10px;border:1px solid #cbd5e1;border-radius:6px}button{background:#173b7a;color:white;cursor:pointer}
+#eventList{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px;margin-top:20px}
+.card{background:white;padding:18px;border-radius:10px;box-shadow:0 3px 12px #0001}.muted{color:#64748b}
+</style></head><body><header><h2>StudentHub - Events</h2></header><main><h1>External JSON Data</h1>
+<div class="controls"><select id="dataset"><option value="events">Events</option><option value="students">Students</option><option value="faqs">FAQs</option></select><input id="search" placeholder="Search records"><select id="category"><option value="">All categories</option></select>
+<select id="sort"><option value="date">Sort by date</option><option value="title">Sort by title</option></select></div>
+<p id="status" role="status">Loading events...</p><section id="eventList"></section>
+<div style="margin:20px 0"><button id="previous">Previous</button> <span id="pageInfo"></span> <button id="next">Next</button></div>
+</main><script src="js/practical6.js"></script></body></html>

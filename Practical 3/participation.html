@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StudentHub - My Participation Summary</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #eef4ff, #f8fbff);
+            color: #1f2937;
+        }
+
+        .navbar {
+            background: #173b7a;
+            color: white;
+            padding: 18px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .nav-title {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1250px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        .layout {
+            display: flex;
+            gap: 25px;
+        }
+
+        .sidebar {
+            width: 220px;
+            background: #173b7a;
+            border-radius: 15px;
+            padding: 20px;
+            min-height: 520px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 13px 10px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover {
+            background: #2f80ed;
+        }
+
+        .student-image {
+            margin-top: 30px;
+            height: 130px;
+            border-radius: 12px;
+            background: #dbe7ff;
+            color: #173b7a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-bottom: 25px;
+        }
+
+        .stat-card {
+            padding: 25px;
+            text-align: center;
+            background: linear-gradient(135deg, #173b7a, #2f80ed);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(47,128,237,0.2);
+        }
+
+        .stat-card h2 {
+            margin: 0 0 8px;
+            font-size: 30px;
+        }
+
+        .section {
+            background: white;
+            border: 1px solid #e1e8f0;
+            border-radius: 15px;
+            padding: 22px;
+            margin-bottom: 22px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .section h3 {
+            margin-top: 0;
+            color: #173b7a;
+        }
+
+        .event {
+            padding: 14px;
+            margin: 10px 0;
+            background: #f4f7fb;
+            border-radius: 9px;
+        }
+
+        .event a {
+            color: #2f80ed;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .event a:hover {
+            text-decoration: underline;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .mini-card {
+            background: #f8fafc;
+            border: 1px solid #e1e8f0;
+            border-radius: 14px;
+            padding: 20px;
+            min-height: 160px;
+            transition: 0.3s;
+        }
+
+        .mini-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+        }
+
+        .mini-card h3 {
+            color: #173b7a;
+        }
+
+        .mini-card a {
+            display: inline-block;
+            margin-top: 12px;
+            background: #2f80ed;
+            color: white;
+            padding: 9px 15px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .mini-card a:hover {
+            background: #1769c2;
+        }
+
+        footer {
+            background: #173b7a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 900px) {
+            .layout {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                min-height: auto;
+            }
+
+            .stats,
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">🎓 StudentHub</div>
+        <div class="nav-title">MY PARTICIPATION SUMMARY</div>
+    </div>
+
+    <div class="container">
+
+        <div class="layout">
+
+            <div class="sidebar">
+                <a href="dashboard.html">🏠 DASHBOARD</a>
+                <a href="profile.html">👤 Profile</a>
+                <a href="academics.html">📚 Academics</a>
+                <a href="participation.html">🎯 Events & Clubs</a>
+                <a href="fees.html">💳 Fees</a>
+
+                <div class="student-image">
+                    STUDENT IMAGE
+                </div>
+            </div>
+
+            <div class="content">
+
+                <div class="stats">
+                    <div class="stat-card">
+                        <h2>12</h2>
+                        <p>Total Events</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h2>3</h2>
+                        <p>Total Clubs Joined</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h2>1</h2>
+                        <p>Pending Registration</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>🎉 MY PARTICIPATED EVENTS</h3>
+
+                    <div class="event">
+                        Tech Fest 2026 — <b>Completed</b>
+                        <a href="#">View Certificate</a>
+                    </div>
+
+                    <div class="event">
+                        Cultural Night — <b>Registered</b>
+                        <a href="#">Cancel Reg</a>
+                    </div>
+
+                    <div class="event">
+                        Web Design Workshop — <b>Registered</b>
+                        <a href="#">Cancel Reg</a>
+                    </div>
+                </div>
+
+                <div class="cards">
+
+                    <div class="mini-card">
+                        <h3>💻 CLUBS JOINED</h3>
+                        <p>• Coding Club</p>
+                        <p>• Debate Club</p>
+                        <a href="#">View Club</a>
+                    </div>
+
+                    <div class="mini-card">
+                        <h3>🎵 AVAILABLE CLUBS</h3>
+                        <p>• Music Club</p>
+                        <p>• Arts Club</p>
+                        <a href="#">Join Now</a>
+                    </div>
+
+                    <div class="mini-card">
+                        <h3>📅 UPCOMING EVENTS</h3>
+                        <p>• Sports Meet</p>
+                        <p>• Alumni Meet</p>
+                        <a href="#">Register</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        STUDENTHUB PORTAL
+    </footer>
+
+</body>
+</html>

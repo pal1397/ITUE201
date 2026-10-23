@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Practical 5 - Student Registration</title><style>
+*{box-sizing:border-box}body{font-family:Arial,sans-serif;background:#eef4ff;margin:0;color:#1f2937}
+header{background:#173b7a;color:white;padding:18px 5%}main{max-width:760px;background:white;margin:30px auto;padding:28px;border-radius:14px}
+label{display:block;font-weight:bold;margin:14px 0 6px;color:#173b7a}input,select{width:100%;padding:11px;border:1px solid #cbd5e1;border-radius:7px}
+button{background:#173b7a;color:white;border:0;padding:12px 22px;border-radius:7px;margin-top:18px;cursor:pointer}
+.error{color:#c0392b;font-size:13px;min-height:16px}.success{color:#16803c;font-weight:bold}.hint{color:#64748b;font-size:13px}
+</style></head><body><header><h2>StudentHub - Student Registration</h2></header><main>
+<h1>Create Student Account</h1><form id="registrationForm" novalidate>
+<label for="name">Full Name</label><input id="name" name="name" required><div class="error" id="nameError"></div>
+<label for="email">Email</label><input id="email" name="email" type="email" required><div class="error" id="emailError"></div>
+<label for="mobile">Mobile Number</label><input id="mobile" name="mobile" inputmode="numeric" maxlength="10" required><div class="error" id="mobileError"></div>
+<label for="password">Password</label><input id="password" name="password" type="password" required><div class="hint">Use at least 8 characters with uppercase, lowercase, number and symbol.</div><div class="error" id="passwordError"></div>
+<label for="confirmPassword">Confirm Password</label><input id="confirmPassword" type="password" required><div class="error" id="confirmPasswordError"></div>
+<label for="course">Course</label><select id="course" required><option value="">Select course</option><option>B.Tech</option><option>BCA</option><option>MCA</option><option>M.Tech</option></select><div class="error" id="courseError"></div>
+<label for="year">Year</label><select id="year" required><option value="">Select year</option><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option></select><div class="error" id="yearError"></div>
+<label for="gender">Gender</label><select id="gender" required><option value="">Select</option><option>Female</option><option>Male</option><option>Other</option><option>Prefer not to say</option></select><div class="error" id="genderError"></div>
+<label><input id="terms" type="checkbox" style="width:auto"> I accept the terms and conditions</label><div class="error" id="termsError"></div>
+<button type="submit">Register</button><p id="formMessage" role="status"></p></form></main><script src="js/practical5.js"></script></body></html>

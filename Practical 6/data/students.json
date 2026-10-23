@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Patel",
+    "email": "student1@studenthub.test",
+    "course": "B.Tech"
+  },
+  {
+    "id": 2,
+    "name": "Diya Shah",
+    "email": "student2@studenthub.test",
+    "course": "BCA"
+  },
+  {
+    "id": 3,
+    "name": "Vivaan Mehta",
+    "email": "student3@studenthub.test",
+    "course": "B.Tech"
+  },
+  {
+    "id": 4,
+    "name": "Anaya Desai",
+    "email": "student4@studenthub.test",
+    "course": "MCA"
+  },
+  {
+    "id": 5,
+    "name": "Reyansh Joshi",
+    "email": "student5@studenthub.test",
+    "course": "B.Tech"
+  },
+  {
+    "id": 6,
+    "name": "Ishita Trivedi",
+    "email": "student6@studenthub.test",
+    "course": "BCA"
+  },
+  {
+    "id": 7,
+    "name": "Krish Patel",
+    "email": "student7@studenthub.test",
+    "course": "M.Tech"
+  },
+  {
+    "id": 8,
+    "name": "Aadhya Shah",
+    "email": "student8@studenthub.test",
+    "course": "B.Tech"
+  },
+  {
+    "id": 9,
+    "name": "Advait Dave",
+    "email": "student9@studenthub.test",
+    "course": "MCA"
+  },
+  {
+    "id": 10,
+    "name": "Myra Joshi",
+    "email": "student10@studenthub.test",
+    "course": "BCA"
+  },
+  {
+    "id": 11,
+    "name": "Arjun Shah",
+    "email": "student11@studenthub.test",
+    "course": "B.Tech"
+  },
+  {
+    "id": 12,
+    "name": "Sara Mehta",
+    "email": "student12@studenthub.test",
+    "course": "M.Tech"
+  },
+  {
+    "id": 13,
+    "name": "Dhruv Desai",
+    "email": "student13@studenthub.test",
+    "course": "BCA"
+  },
+  {
+    "id": 14,
+    "name": "Kiara Patel",
+    "email": "student14@studenthub.test",
+    "course": "B.Tech"
+  },
+  {
+    "id": 15,
+    "name": "Kabir Trivedi",
+    "email": "student15@studenthub.test",
+    "course": "MCA"
+  }
+]

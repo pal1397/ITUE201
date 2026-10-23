@@ -1,0 +1,3 @@
+<?php require __DIR__.'/config/functions.php'; require __DIR__.'/config/db.php'; require_admin();
+$users=(int)$pdo->query('SELECT COUNT(*) FROM users')->fetchColumn();
+?><!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Dashboard</title><link rel="stylesheet" href="css/php-style.css"></head><body><main class="box"><h1>Admin Dashboard</h1><p>Welcome, <?=e($_SESSION['name'])?></p><p>Total users: <?=$users?></p><p><a href="student_dashboard.php">Student dashboard</a> | <a href="logout.php">Logout</a></p></main></body></html>
